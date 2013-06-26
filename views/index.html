@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <!-- Your Basic Site Informations -->
+        <title>{{title}}</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="{{description}}" />
+		<link rel="shortcut icon" href="{{assets_img}}favicon.png" />
+
+        <!-- Google WEB Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,700|Abel' rel='stylesheet' type='text/css' />
+		
+		<link href='{{assets_css}}fonts/bebas-neue-fontfacekit/stylesheet.css' rel='stylesheet' type='text/css'>
+
+        <!-- Site CSS Files -->
+        <link href="{{assets_css}}main.css" rel="stylesheet" type="text/css"/>
+
+        <!-- jQuery JavaScript script -->
+        <script type="text/javascript" src="{{assets_js}}jquery-latest.min.js"></script>
+		
+        <!-- MyHint JavaScript jQuery plugin -->
+        <script type="text/javascript" src="{{assets_js}}myHint.js"></script>
+
+        <!-- Main JavaScript script -->
+        <script type="text/javascript" src="{{assets_js}}main.js"></script>
+    </head>
+    <body>
+        <div class="header wrapper blockCenter topPadding">
+            <img src="{{assets_img}}launching-soon.png" alt="Launching Soon!"/>
+        </div>
+        <div class="wrapper blockCenter rocketSpacer">
+            <img src="{{assets_img}}line.png" alt="-----------------------------------"/>
+        </div>
+        <div class="wrapper blockCenter">
+            <div class="floatLeft">
+                <div class="info">
+                    {{info}}
+                    WE ARE CURRENTLY WORKING ON AN AWESOME NEW SITE. <a href="#subscribe">SUBSCRIBE TO BE NOTIFIED!</a>
+                    <!--
+                    <div class="time">
+                        <ul>
+                            <li>
+                                <span id="days">0</span>
+                                <span class="timeDescription">DAYS</span>
+                            </li>
+                            <li class="separator">
+                                <img src="{{assets_img}}separator.png" alt="--" />
+                            </li>
+                            <li>
+                                <span id="hours">0</span>
+                                <span class="timeDescription">HOURS</span>
+                            </li>
+                            <li class="separator">
+                                <img src="{{assets_img}}separator.png" alt="--" />
+                            </li>
+                            <li>
+                                <span id="minutes">0</span>
+                                <span class="timeDescription">MINUTES</span>
+                            </li>
+                            <li class="separator">
+                                <img src="{{assets_img}}separator.png" alt="--" />
+                            </li>
+                            <li>
+                                <span id="seconds">0</span>
+                                <span class="timeDescription">SECONDS</span>
+                            </li>
+                        </ul>
+                    </div>
+                    -->
+                    <div class="timeToLanch">
+                        <img src="{{assets_img}}launch.png" alt="Launch" />
+                    </div>
+                </div>
+            </div>
+            <img src="{{assets_img}}rocket.png" alt="ROCKET" class="floatRight"/>
+        </div>
+        <a name="subscribe"/>
+        <div class="lightBlue clear">
+            <div class="wrapper blockCenter subscribe">
+                <input id="subscribe" class="subscribe floatLeft" type="text" />
+                <button id="signUp" class="signUp floatRight">SIGN UP!</button>
+                <div class="clear">&nbsp;</div>
+            </div>
+        </div>
+        <div class="darkBlue clear">
+            <div class="wrapper blockCenter">
+                <div class="about collumn floatLeft">
+                    <span class="title">ABOUT US</span>
+                    <p>
+                        Vivamus pretium volutpat tellus utes gravida. Donec ante
+                        justo, ullamcorper laoreet euismod eu, fringilla nec ipsum.
+                        Etiam adipiscing.
+                    </p>
+                    <p>
+                        Purus ut tempus. Cum socis natoque penatibus et magnis dis
+                        parturient montes, nascetures ridiculus mus. In nulla ligula.
+                    </p>
+                    <p class="plainText">
+                        Rhoncus vitae gravida ullamcorper eros. Integer gravida
+                        pulvinar lectus, a ullamcorper mauris ultri cies ates.
+                        Nteger eleifend lacus quis eros interdum lorem deonec
+                        ipsum sit amet. Cum sociis natoque penatibus et magnis dis.
+                        Nteger eleifend lacus quis eros interdum lorem deonec
+                        ipsum sit amet per setera si.
+                    </p>
+                </div>
+                <!--
+                <div class="ourTwitts collumn floatLeft leftSpacer">
+                    <span class="title">OUR TWEETS</span>
+                    <ul class="twitts">
+                        <li>
+                            <a href="#" class="twittURL">#TwitterName</a>
+                            Status text...
+                            <span class="time">Twitter Date</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="followUsURL floatRight clear" target="_blank">follow us on twitter</a>
+                </div>
+            -->
+                <div class="contactUs collumn floatLeft leftSpacer">
+                    <span class="title">CONTACT US</span>
+                    <div class="contactBackground">
+                        <ul>
+                            <li>
+                                <input class="contactInput required" type="text" name="contact_name" />
+                            </li>
+                            <li>
+                                <input class="contactInput required email" type="text" name="contact_email" />
+                            </li>
+                            <li>
+                                <input class="contactInput required" type="text" name="contact_subject" />
+                            </li>
+                            <li>
+                                <textarea class="contactInput required" name="contact_message" cols="28" rows="4"></textarea>
+                            </li>
+                            <li>
+                                <button class="sendMessage" id="sendMessage">SEND MESSAGE</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear">&nbsp;</div>
+            </div>
+        </div>
+        <div class="wrapper blockCenter footer clear">
+            <div class="copyright floatLeft">Copyright <a href="http://www.miranium.com" target="_blank">miranium</a> 
+                All Rights Reserved.
+            </div>
+            <div class="floatRight">
+                <ul>
+                    <li class="checkOut floatLeft"><img src="{{assets_img}}check.png" alt="Check Out" /></li>
+                    <li class="menuItem floatLeft">
+                        <a href="#" target="_blank">
+                            <img src="{{assets_img}}rss.png" alt="RSS" />
+                        </a>
+                    </li>
+                    <li class="menuItem floatLeft">
+                        <a href="#" target="_blank">
+                            <img src="{{assets_img}}twitter.png" alt="Twitter" />
+                        </a>
+                    </li>
+                    <li class="menuItem floatLeft">
+                        <a href="#" target="_blank">
+                            <img src="{{assets_img}}skype.png" alt="Skype" />
+                        </a>
+                    </li>
+                    <li class="menuItem floatLeft">
+                        <a href="#" target="_blank">
+                            <img src="{{assets_img}}facebook.png" alt="Facebook" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
