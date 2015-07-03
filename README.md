@@ -3,4 +3,4 @@ theme-launch-landing
 
 Theme: Launch Landing
 
-version .1
+version .2
